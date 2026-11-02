@@ -112,8 +112,23 @@ $$
 每个区段在多个内部时刻计算目标位姿与当前位姿的残差，将它们堆叠为$r$。目标不再是让一个时刻的末端位置达标，而是共同降低该区段多个时刻的偏差。相应地，原来对关节角求导的残差Jacobian，需要通过链式法则转换为对系数求导：
 
 $$
-A_j=[b_0(s_j)J_j\;b_1(s_j)J_j\;\cdots\;b_{K-1}(s_j)J_j],
-\qquad A=\operatorname{stack}(A_j).
+A_j=
+\begin{bmatrix}
+b_0(s_j)J_j\\
+b_1(s_j)J_j\\
+\vdots\\
+b_{K-1}(s_j)J_j
+\end{bmatrix}
+$$
+
+$$
+A=
+\begin{bmatrix}
+A_1\\
+A_2\\
+\vdots\\
+A_M
+\end{bmatrix}
 $$
 
 将区段系数展平成向量$c$，DLS更新写为：
