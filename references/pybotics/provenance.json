@@ -1,0 +1,22 @@
+{
+  "project": "Pybotics",
+  "version": "3.1.2",
+  "repository": "https://github.com/engnadeau/pybotics",
+  "archived": true,
+  "license": "MIT",
+  "source": "Unmodified source snapshots from installed PyPI wheel; upstream Git commit not independently mapped",
+  "used_api": [
+    "MDHKinematicChain",
+    "Robot.fk",
+    "Robot.jacobian_world"
+  ],
+  "robotics_toolbox_used": false,
+  "declared_numpy_range": ">=1.22,<2.0",
+  "actual_environment_note": "Existing NumPy is 2.5.4. Installed Pybotics with --no-deps in project-local .deps; only selected FK/Jacobian APIs tested in experiment11. This is outside its declared NumPy support range, not a general compatibility claim.",
+  "snapshots": {
+    "kinematic_chain.py": "8c22a4e700e8b30b8c4fc2e531b863d1724d703f3fa3311b9f0fecb3e72edced",
+    "LICENSE": "6a2271abf7f8fffb9640445204b658665b903e819bf75d78e97fb50718ee223c",
+    "link.py": "0384fd8b9cec06f5e093449b9dce1fa867d0e42116aaa5a79eea029e55dd7a5b",
+    "robot.py": "00cac5bbb0af76eb0e4c8fcc62956fb4a744ce44a982233f2014b96949e62394"
+  }
+}

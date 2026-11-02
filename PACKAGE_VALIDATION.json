@@ -1,0 +1,69 @@
+{
+  "project": "final_report",
+  "selected_experiments": [
+    "11",
+    "06",
+    "07",
+    "09",
+    "10",
+    "12",
+    "14",
+    "15"
+  ],
+  "removed_experiments": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06 legacy analysis",
+    "13"
+  ],
+  "python_files_parsed": 32,
+  "missing_local_imports": [],
+  "broken_markdown_links": [],
+  "reference_files_identical": true,
+  "model_files_identical": true,
+  "numerical_code_identical_except_path_index": true,
+  "original_project_modified": false,
+  "new_directory_verifications": {
+    "ik": {
+      "passed": true,
+      "evidence": "results/ik_comparison/verification.json",
+      "scope": "Saved-data recomputation in final_report; not full experiment rerun"
+    },
+    "mdh": {
+      "passed": true,
+      "evidence": "results/mdh_analysis/ik_mdh_verification.json",
+      "scope": "Saved-data recomputation in final_report; not full experiment rerun"
+    },
+    "segment_dls": {
+      "passed": true,
+      "evidence": "results/segment_dls/verification.json",
+      "scope": "Saved-data recomputation in final_report; not full experiment rerun"
+    },
+    "segment_tracking": {
+      "passed": true,
+      "evidence": "results/segment_tracking/verification.json",
+      "scope": "Saved-data recomputation in final_report; not full experiment rerun"
+    }
+  },
+  "fresh_environment_install_tested": false,
+  "real_robot_tested": false,
+  "retained_experiment_entry_count": 8,
+  "readme_count": 1,
+  "runtime_hashes_match": true,
+  "date": "2026-11-02",
+  "not_rerun_here": [
+    "Full MDH experiment requiring Pybotics",
+    "All dynamics simulations",
+    "Fresh environment installation"
+  ],
+  "file_count": 221,
+  "docs_markdown_files": [
+    "Rizon4_3分钟展示讲稿.md",
+    "代码来源与项目改动.md",
+    "全部实验说明.md"
+  ]
+}

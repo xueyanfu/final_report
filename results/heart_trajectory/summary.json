@@ -1,0 +1,50 @@
+{
+  "model": "F:\\desk_F\\rizon4-pinocchio\\flexiv_rizon4\\flexiv_rizon4.xml",
+  "model_sha256": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c",
+  "pinocchio_version": "4.1.0",
+  "mujoco_version": "3.16.0",
+  "samples": 401,
+  "duration_s": 10.0,
+  "scale": 0.004,
+  "frame": "link7 BODY; fixed home orientation; world YZ plane",
+  "temporal_law": "theta=2*pi*(10*u^3-15*u^4+6*u^5); not constant arc speed",
+  "heart_width_m": 0.1279938971363226,
+  "heart_height_m": 0.11569127163236992,
+  "knot_max_position_error_m": 9.756224762774874e-07,
+  "knot_max_rotation_error_rad": 3.0714171140571046e-07,
+  "interpolation_max_position_error_m": 1.5406526239440097e-05,
+  "interpolation_max_rotation_error_rad": 5.186770156656878e-07,
+  "max_adjacent_joint_step_rad": 0.005822990443995701,
+  "max_joint_speed_estimate_rad_s": [
+    0.0899904969464149,
+    0.04159991302353935,
+    0.09956043237105816,
+    0.23291961775982475,
+    0.0038808102133767795,
+    0.20547086781752927,
+    0.15968430707837927
+  ],
+  "joint_closure_max_rad": 9.238693981447081e-05,
+  "minimum_limit_margin_rad": 0.9933831191041094,
+  "fk_checks": {
+    "fk_position_max_abs_m": 2.7755575615628914e-16,
+    "rotation_max_abs": 8.881784197001252e-16,
+    "mj_jacobian_max_abs": 2.7755575615628914e-16,
+    "finite_difference_max_abs": 1.2678297300894315e-10
+  },
+  "collision_free_certified": false,
+  "code_sha256": {
+    "experiments_07_heart_trajectory.py": "bdd6acfb2fd7fa190d15630b4999e780890ac85dcba0e869685de1547be2a0fb",
+    "rizon4_ik.py": "e58075abafefa956b7e01e6ca93699ee3393f73785a54d278fe03dd2413890e6",
+    "rizon4_analysis_common.py": "c7d4ac0c6b9443ea4b8b6e67449db4a62e30841d7e225c404a96b7da09a1465a"
+  },
+  "physics": {
+    "draw_samples": 4999,
+    "draw_rmse_m": 0.010190505891564885,
+    "draw_max_error_m": 0.021142173572144613,
+    "max_contact_count": 0,
+    "end_time_s": 11.000000000000343,
+    "completed": true,
+    "actual_min_limit_margin_rad": 0.9954189010755143
+  }
+}

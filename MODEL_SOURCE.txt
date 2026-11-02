@@ -1,0 +1,55 @@
+Flexiv Rizon4 model provenance
+=============================
+
+Upstream project: Google DeepMind MuJoCo Menagerie
+Robot description: flexiv_rizon4
+Repository: https://github.com/google-deepmind/mujoco_menagerie
+Recorded upstream commit: f3b6013629c7b94f8ee93fd977b161fa8350f9bc
+Recorded model directory:
+https://github.com/google-deepmind/mujoco_menagerie/tree/f3b6013629c7b94f8ee93fd977b161fa8350f9bc/flexiv_rizon4
+
+Model resource license: Apache-2.0
+Local license: flexiv_rizon4/LICENSE
+Upstream model description preserved at: references/MENAGERIE_README.txt
+Upstream changelog preserved at: references/MENAGERIE_CHANGELOG.txt
+
+Included model resources
+------------------------
+flexiv_rizon4/flexiv_rizon4.xml
+flexiv_rizon4/scene.xml
+flexiv_rizon4/assets/ (OBJ meshes, MTL materials and related XML files)
+flexiv_rizon4/flexiv_rizon4.png
+flexiv_rizon4/compute_gains.py
+flexiv_rizon4/LICENSE
+
+The model directory, geometry, materials, model image and gain-generation script
+are upstream resources, not newly created robot assets of this coursework.
+The model retains the upstream position actuators, joint limits, armature and
+gravity-compensation assumptions used by the numerical experiments.
+
+Recorded source and verification limits
+--------------------------------------
+The commit above is the source version recorded by this project. During the
+2026-11-02 package audit, the complete model directory was not independently
+downloaded and compared byte-for-byte with that remote commit. Do not describe
+this audit as a complete upstream asset-integrity verification.
+
+The local compute_gains.py was checked against its archived reference copy:
+references/menagerie_compute_gains_original.py
+Both SHA-256 values:
+ec21ee489d387e9959b272a38912074ff901a140643e935a424d2bfa61feda53
+SOURCE_PROVENANCE.json retains the existing recorded upstream provenance.
+Individual experiment metadata records the model XML hash used for that run.
+
+Project-specific modeling
+-------------------------
+The seven-joint Craig modified-DH table was supplied by the user and is retained
+as docs/assets/mdh_user_table.png. It is implemented independently in
+experiments/kinematics/rizon4_mdh.py and compared with the MJCF model.
+The MDH implementation is not a replacement license or authorship claim for
+the upstream MJCF/mesh assets.
+
+All kinematic comparisons use the fixed-base seven-joint model and the world
+pose of the link7 BODY origin. This is not an additional tool TCP. The MDH base
+transform includes a world-Z translation of 0.365 m. Simulation consistency
+with this model is not physical robot calibration or measured hardware accuracy.

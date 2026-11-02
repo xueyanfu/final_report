@@ -1,0 +1,56 @@
+[
+  {
+    "project": "Pinocchio",
+    "commit": "f3b3953babbc65f9c91f294f956836ee5a6c9d0e",
+    "source_path": "examples/inverse-kinematics.py",
+    "archived_path": "references/pinocchio_inverse_kinematics_original.py",
+    "license": "BSD-2-Clause",
+    "sha256": "7981b991d097da3fbf27b497bc3bcdbd12714ae2761bce535ff3f022a22a4694",
+    "matches_git_blob_ignoring_line_endings": true
+  },
+  {
+    "project": "MuJoCo Menagerie",
+    "commit": "f3b6013629c7b94f8ee93fd977b161fa8350f9bc",
+    "source_path": "flexiv_rizon4/compute_gains.py",
+    "archived_path": "references/menagerie_compute_gains_original.py",
+    "license": "Apache-2.0",
+    "sha256": "ec21ee489d387e9959b272a38912074ff901a140643e935a424d2bfa61feda53",
+    "matches_git_blob_ignoring_line_endings": true
+  },
+  {
+    "project": "SciPy",
+    "version": "1.18.1",
+    "installed_git_revision": "e4e854eaa8f18d807cd3496028e257e36caa93cc",
+    "source_path": "scipy/interpolate/_bsplines.py",
+    "archived_path": "references/scipy_bsplines_original.py",
+    "sha256": "b099333d1dc57d0d4ad5300c04cd2767350048cac2b9dee464e40ab469510caa",
+    "license": "BSD-3-Clause; see references/SCIPY_LICENSE.txt",
+    "provenance": "Copied byte-for-byte from installed package; upstream commit not independently fetched",
+    "usage": "Calls CubicSpline and make_interp_spline; no edits to SciPy algorithms",
+    "documentation": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.make_interp_spline.html"
+  },
+  {
+    "project": "MuJoCo Menagerie model resources",
+    "commit": "f3b6013629c7b94f8ee93fd977b161fa8350f9bc",
+    "local_directory": "flexiv_rizon4",
+    "license_path": "flexiv_rizon4/LICENSE",
+    "record": "MODEL_SOURCE.txt",
+    "all_assets_compared_with_remote_this_run": false
+  },
+  {
+    "project": "Pybotics",
+    "version": "3.1.2",
+    "license": "MIT",
+    "record": "references/pybotics/provenance.json"
+  },
+  {
+    "project": "Experiment14 related research, not copied source code",
+    "related_work": [
+      "https://sglab.kaist.ac.kr/TORM-auro/",
+      "https://motion.cs.illinois.edu/papers/RSS2013_InterpolationOptimizationManifolds.pdf"
+    ],
+    "implementation": "experiments/trajectory_smoothing/segment_dls.py",
+    "contribution_scope": "Course-project extension of existing DLS and spline code; no literature-first claim",
+    "mapping": "docs/代码来源与项目改动.md"
+  }
+]

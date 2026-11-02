@@ -1,0 +1,26 @@
+{
+  "platform": "Windows",
+  "recorded_versions": {
+    "python": "3.12.16",
+    "pinocchio": "4.1.0",
+    "mujoco": "3.17.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1"
+  },
+  "note": "Recorded experiment environment, not a cross-platform lockfile. environment.yml installation has not been tested in a fresh environment.",
+  "historical_record_note": "recorded_versions is the previous package record; do not apply it to all runs.",
+  "latest_verified_run": {
+    "date": "2026-11-02",
+    "experiment": "14 segment DLS",
+    "versions": {
+      "python": "3.12.16",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pinocchio": "4.1.0",
+      "mujoco": "3.16.0"
+    },
+    "evidence": "results/segment_dls/verification.json",
+    "fresh_environment_install_tested": false
+  }
+}

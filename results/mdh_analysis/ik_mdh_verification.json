@@ -1,0 +1,24 @@
+{
+  "saved_solution_count": 576,
+  "target_count": 12,
+  "target_matrix_max_difference": 8.326672684688674e-16,
+  "max_position_error_difference_m": 1.3520272141437362e-15,
+  "max_rotation_error_difference_rad": 5.906386491005833e-14,
+  "all_success_labels_match": true,
+  "legal_success_counts": {
+    "A_fixed": 44,
+    "B_cap": 51,
+    "C_candidates": 51,
+    "D_search": 51,
+    "E_full": 64,
+    "minus_candidates": 60,
+    "minus_cap": 61,
+    "minus_search": 64
+  },
+  "note": "Existing IK outputs independently checked with user MDH FK; solver was NOT replaced or rerun.",
+  "source_hashes": {
+    "metadata.json": "139e9ffe13d0635639548bf8eeca1b2792c460bf7f9beada8862fe26baa74477",
+    "cases.json": "69581b90a7d9101ac20200f2a8dc5693b8295d56d395d0da306c161cbf84999d",
+    "solutions.csv": "03bd6a9c9775807afa9c33f8b71360c89034d89d20b7696cb4e58e793133fb59"
+  }
+}

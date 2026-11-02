@@ -1,0 +1,103 @@
+{
+  "checks": [
+    {
+      "case": "standard",
+      "method": "linear",
+      "continuous_interval_margin_rad": 0.9933831191041094,
+      "derivative_max_abs_error": 0.0,
+      "statistics_recomputed": true,
+      "standard_replayed": true
+    },
+    {
+      "case": "standard",
+      "method": "cubic",
+      "continuous_interval_margin_rad": 0.9933831191025846,
+      "derivative_max_abs_error": 1.8058197732290227e-10,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "standard",
+      "method": "quintic",
+      "continuous_interval_margin_rad": 0.9933831191020464,
+      "derivative_max_abs_error": 7.744501040463092e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "standard",
+      "method": "refined_quintic",
+      "continuous_interval_margin_rad": 0.9933831217434561,
+      "derivative_max_abs_error": 7.86899168048194e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": true
+    },
+    {
+      "case": "faster",
+      "method": "linear",
+      "continuous_interval_margin_rad": 0.9933831191041094,
+      "derivative_max_abs_error": 0.0,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "faster",
+      "method": "cubic",
+      "continuous_interval_margin_rad": 0.9933831191025844,
+      "derivative_max_abs_error": 2.2175219993592066e-10,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "faster",
+      "method": "quintic",
+      "continuous_interval_margin_rad": 0.9933831191020457,
+      "derivative_max_abs_error": 5.930285595923124e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "faster",
+      "method": "refined_quintic",
+      "continuous_interval_margin_rad": 0.9933831217434566,
+      "derivative_max_abs_error": 7.86342546632568e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "larger",
+      "method": "linear",
+      "continuous_interval_margin_rad": 0.9478131659685785,
+      "derivative_max_abs_error": 0.0,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "larger",
+      "method": "cubic",
+      "continuous_interval_margin_rad": 0.9478131659652285,
+      "derivative_max_abs_error": 1.7205807611997415e-10,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "larger",
+      "method": "quintic",
+      "continuous_interval_margin_rad": 0.9478131659669149,
+      "derivative_max_abs_error": 7.209576935451878e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    },
+    {
+      "case": "larger",
+      "method": "refined_quintic",
+      "continuous_interval_margin_rad": 0.947813173416135,
+      "derivative_max_abs_error": 7.0555303821606685e-09,
+      "statistics_recomputed": true,
+      "standard_replayed": false
+    }
+  ],
+  "reference_interval_limit_check": "Polynomial derivative roots and endpoints; floating point arithmetic",
+  "prior_baseline_reproduced": true,
+  "dt_s": 0.002
+}

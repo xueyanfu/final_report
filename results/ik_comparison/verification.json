@@ -1,0 +1,55 @@
+{
+  "saved_result_count": 576,
+  "recomputed_error_max_difference": 0.0,
+  "original_sampling_exact": true,
+  "packaged_code_hashes_match": {
+    "experiments/__init__.py": true,
+    "experiments/common/__init__.py": true,
+    "experiments/common/paths.py": true,
+    "experiments/common/rizon4_analysis_common.py": true,
+    "experiments/inverse_kinematics/__init__.py": true,
+    "experiments/inverse_kinematics/rizon4_ik.py": true,
+    "experiments/inverse_kinematics/run_06_reference.py": true,
+    "experiments/kinematics/__init__.py": true,
+    "experiments/kinematics/experiments_11_mdh_analysis.py": true,
+    "experiments/kinematics/rizon4_mdh.py": true,
+    "experiments/trajectory_smoothing/__init__.py": true,
+    "experiments/trajectory_smoothing/experiments_10_smooth_tracking.py": true,
+    "experiments/trajectory_smoothing/experiments_14_segment_dls.py": true,
+    "experiments/trajectory_smoothing/experiments_15_segment_tracking.py": true,
+    "experiments/trajectory_smoothing/segment_dls.py": true,
+    "experiments/trajectory_smoothing/smooth_trajectory.py": true,
+    "experiments/trajectory_tracking/__init__.py": true,
+    "experiments/trajectory_tracking/experiments_07_heart_trajectory.py": true,
+    "experiments/trajectory_tracking/experiments_09_heart_tracking_comparison.py": true,
+    "experiments/trajectory_tracking/experiments_12_heart_dls_comparison.py": true,
+    "flexiv_rizon4/compute_gains.py": true,
+    "validation/__init__.py": true,
+    "validation/comparison/__init__.py": true,
+    "validation/comparison/verify_comparison.py": true,
+    "validation/inverse_kinematics/__init__.py": true,
+    "validation/inverse_kinematics/verify_06_reference.py": true,
+    "validation/kinematics/__init__.py": true,
+    "validation/kinematics/verify_mdh_ik.py": true,
+    "validation/trajectory_smoothing/__init__.py": true,
+    "validation/trajectory_smoothing/verify_segment_dls.py": true,
+    "validation/trajectory_smoothing/verify_segment_tracking.py": true,
+    "validation/trajectory_smoothing/verify_smooth_tracking.py": true
+  },
+  "run_checks": {
+    "model": {
+      "fk_position_max_abs_m": 2.7755575615628914e-16,
+      "rotation_max_abs": 8.881784197001252e-16,
+      "mj_jacobian_max_abs": 2.7755575615628914e-16,
+      "finite_difference_max_abs": 1.2678297300894315e-10
+    },
+    "derivatives": {
+      "position": 1.4863449360191794e-10,
+      "pose": 1.163382168378746e-10
+    },
+    "full_solver_max_angle_difference": 0.0,
+    "repeat_max_angle_difference": 0.0
+  },
+  "final_source_sha256": "a9ee7ad208e98ddf46d8cbbed71d09597090f01cf6bf30ff4a46278c68b2113b",
+  "note": "整理版仅调整入口和包内路径；历史实验元数据保持原样，最终代码哈希见source_manifest.json。"
+}

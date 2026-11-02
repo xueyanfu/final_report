@@ -1,0 +1,49 @@
+{
+  "cases": [
+    [
+      "standard",
+      41,
+      0.004
+    ],
+    [
+      "larger",
+      41,
+      0.005
+    ],
+    [
+      "coarse",
+      21,
+      0.004
+    ]
+  ],
+  "controller": "unchanged experiment10 velocity + inverse-dynamics feedforward with position servos",
+  "dt_s": 0.002,
+  "hold_s": 1.0,
+  "source_inputs_sha256": {
+    "results\\segment_dls\\standard_segment_dls.npz": "71142c05ee6a7ff255cec19a30c39b2a94dfc73d9f898ec4588e32838ab376fd",
+    "results\\segment_dls\\larger_segment_dls.npz": "b0f214a75207069d321db8ebff8d421677e8db3c4b8f7f80df63b3f5ba664769"
+  },
+  "source_sha256": {
+    "experiments\\trajectory_smoothing\\experiments_15_segment_tracking.py": "9852c62b3756a812ca3894ea0155e4a33608d1b6d3b7195a3f8872cc8f4cb0fb",
+    "experiments/trajectory_smoothing/segment_dls.py": "8c807aa5fef502bb9466b4576017e329a2c7ddf573d1b75badd7fd7f18a7f280",
+    "experiments/trajectory_smoothing/experiments_10_smooth_tracking.py": "8face349235a4e486b87ec7b37bb5deaed68f65667f296cbd57c1238595274b2",
+    "experiments/trajectory_smoothing/smooth_trajectory.py": "2474f7a3a6c1be767489029896bb446ca542f6fe8ffc6e079acf51cc3c144116",
+    "experiments/trajectory_smoothing/experiments_14_segment_dls.py": "f7f97d5588ee0c0d0d5cb4616ab3b5f15adc75ba0a10ea690a8ca65eb4917f3b",
+    "experiments/trajectory_tracking/experiments_09_heart_tracking_comparison.py": "affae1c8af1adfb919e9b2e11caedea80c0028f2a498f8cf3f71022120f641f6",
+    "experiments/trajectory_tracking/experiments_07_heart_trajectory.py": "d280d9606c560fdf0bbb5847272d26fda50aa344d348185e7456d857353b0f70",
+    "experiments/inverse_kinematics/rizon4_ik.py": "e58075abafefa956b7e01e6ca93699ee3393f73785a54d278fe03dd2413890e6",
+    "experiments/common/rizon4_analysis_common.py": "c7d4ac0c6b9443ea4b8b6e67449db4a62e30841d7e225c404a96b7da09a1465a"
+  },
+  "model_sha256": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c",
+  "python": "3.12.16",
+  "pinocchio": "4.1.0",
+  "mujoco": "3.16.0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "dynamics_check": {
+    "mass_matrix_max_abs": 4.440892098500626e-15,
+    "inverse_dynamics_without_gravity_max_abs_Nm": 1.7763568394002505e-14
+  },
+  "design": "Cases fixed before simulation; no controller tuning or selection by observed gain",
+  "scope": "Deterministic model simulation, not hardware; per-method geometry/servo RMSE cannot be added as scalars"
+}

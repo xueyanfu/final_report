@@ -1,0 +1,31 @@
+{
+  "options": {
+    "profiles": 4,
+    "probes": 9,
+    "iterations": 2,
+    "damping": 0.001,
+    "rotation_weight": 0.2,
+    "coefficient_step": 0.001,
+    "max_jerk_rms_ratio": 1.05,
+    "max_jerk_peak_ratio": 1.2
+  },
+  "evaluation_samples": 16001,
+  "python": "3.12.16",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "pinocchio": "4.1.0",
+  "mujoco": "3.16.0",
+  "source_sha256": {
+    "experiments/trajectory_smoothing/segment_dls.py": "8c807aa5fef502bb9466b4576017e329a2c7ddf573d1b75badd7fd7f18a7f280",
+    "experiments/trajectory_smoothing/experiments_14_segment_dls.py": "f7f97d5588ee0c0d0d5cb4616ab3b5f15adc75ba0a10ea690a8ca65eb4917f3b",
+    "experiments/trajectory_smoothing/smooth_trajectory.py": "2474f7a3a6c1be767489029896bb446ca542f6fe8ffc6e079acf51cc3c144116",
+    "experiments/inverse_kinematics/rizon4_ik.py": "e58075abafefa956b7e01e6ca93699ee3393f73785a54d278fe03dd2413890e6",
+    "experiments/trajectory_tracking/experiments_07_heart_trajectory.py": "d280d9606c560fdf0bbb5847272d26fda50aa344d348185e7456d857353b0f70",
+    "experiments/common/rizon4_analysis_common.py": "c7d4ac0c6b9443ea4b8b6e67449db4a62e30841d7e225c404a96b7da09a1465a"
+  },
+  "model_sha256": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c",
+  "scope": "Offline kinematic path error; no controller or real robot evaluation",
+  "timing": "Single-run diagnostic, includes shared IK and correction but excludes final evaluation and plots; no repeated timing claim",
+  "attribution": "Existing DLS and spline methods; new project-specific segment residual and endpoint-locked correction; not a literature-first claim",
+  "experiment_design": "profiles/damping selected in preliminary standard/finer experiments; larger scale evaluated after fixing defaults; neither is a broad independent benchmark"
+}

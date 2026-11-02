@@ -1,0 +1,29 @@
+{
+  "options": {
+    "max_iterations": 150,
+    "position_tolerance": 1e-06,
+    "rotation_tolerance": 1e-05,
+    "rotation_weight": 0.2,
+    "max_joint_step": 0.2,
+    "damping": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "backtracking_steps": 10
+  },
+  "samples": 401,
+  "scale": 0.004,
+  "duration": 10.0,
+  "repeats": 3,
+  "seed": 42,
+  "full_solver_original_max_difference": 0.0,
+  "protocols": {
+    "paired": "same prior full-solver reference initial guess at each node; conditional comparison",
+    "sequential": "each solver uses own prior solution; stops at first invalid endpoint"
+  },
+  "timing": "median repeated solve time including common trace/SVD; not real-time control guarantee",
+  "source_sha256": "c09020096b5192a3860a9f885376cbca0fe7b04c964aae1a2b62135efafb3740",
+  "model_sha256": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c"
+}

@@ -1,0 +1,10 @@
+name: final_report
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pinocchio=4.1.0
+  - numpy
+  - scipy
+  - matplotlib
+  - mujoco

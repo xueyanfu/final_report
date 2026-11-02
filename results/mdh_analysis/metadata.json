@@ -1,0 +1,134 @@
+{
+  "seed": 42,
+  "random_count": 1000,
+  "total_configurations": 1030,
+  "convention": "Craig: Rx(alpha) Tx(a) Rz(q+offset) Tz(d); world_T_0=Trans(0,0,0.365)",
+  "frame": "MDH7 == link7 BODY origin; fixed base; identity tool",
+  "parameters": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.5707963267948966,
+      0.065,
+      -3.141592653589793
+    ],
+    [
+      0.0,
+      1.5707963267948966,
+      0.395,
+      -3.141592653589793
+    ],
+    [
+      0.02,
+      -1.5707963267948966,
+      0.055,
+      -3.141592653589793
+    ],
+    [
+      0.02,
+      -1.5707963267948966,
+      0.385,
+      -3.141592653589793
+    ],
+    [
+      0.0,
+      1.5707963267948966,
+      0.103,
+      1.5707963267948966
+    ],
+    [
+      0.11,
+      1.5707963267948966,
+      0.015,
+      0.0
+    ]
+  ],
+  "world_T_0": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.365
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fk_maxima": {
+    "Pinocchio": {
+      "position_error_m": 7.736788912175082e-16,
+      "rotation_error_rad": 1.339157960972685e-15,
+      "matrix_max_abs": 1.3877787807814457e-15
+    },
+    "MuJoCo": {
+      "position_error_m": 8.181129530347103e-16,
+      "rotation_error_rad": 1.4091642125593849e-15,
+      "matrix_max_abs": 1.27675647831893e-15
+    },
+    "Pybotics": {
+      "position_error_m": 0.0,
+      "rotation_error_rad": 0.0,
+      "matrix_max_abs": 0.0
+    }
+  },
+  "jacobian_maxima": {
+    "Pinocchio": {
+      "linear_max_abs": 6.661338147750939e-16,
+      "angular_max_abs": 1.2559397966072083e-15
+    },
+    "MuJoCo": {
+      "linear_max_abs": 7.216449660063518e-16,
+      "angular_max_abs": 1.6653345369377348e-15
+    },
+    "Pybotics": {
+      "linear_max_abs": 5.551115123125783e-16,
+      "angular_max_abs": 5.551115123125783e-16
+    },
+    "central_difference": {
+      "linear_max_abs": 3.393160197262546e-10,
+      "angular_max_abs": 3.9188063905015724e-10
+    }
+  },
+  "checks": {
+    "fk_all_references_below_1e-10": true,
+    "jacobian_all_below_1e-7": true,
+    "missing_base_always_365mm": true,
+    "rotation_matrices_valid": true
+  },
+  "collision_checked": false,
+  "finite_difference_step_rad": 1e-06,
+  "perturbation": "one positive parameter at a time: a,d +1mm; alpha,offset +0.1deg; all other parameters fixed",
+  "versions": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "pinocchio": "4.1.0",
+    "mujoco": "3.16.0",
+    "pybotics": "3.1.2",
+    "attrs": "25.3.0"
+  },
+  "hashes": {
+    "experiments/experiments_11_mdh_analysis.py": "01b9b9cd34ea6d41f2d42f94cda1a581cf2e81ef6b4487e28814c7e42b2957d0",
+    "experiments/rizon4_mdh.py": "c11033251abf2ef158e8d62c4ae3ebe53c4a5450f0db94e45e5213ecc19f18f1",
+    "flexiv_rizon4/flexiv_rizon4.xml": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c"
+  }
+}

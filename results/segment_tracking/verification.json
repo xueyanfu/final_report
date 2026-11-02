@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run": "standard_base",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 19.028338040387084,
+      "mdh_actual_position_max_m": 5.551115123125783e-16,
+      "reference_decomposition_max_difference_m": 4.92901389259723e-16
+    },
+    {
+      "run": "standard_segment_dls",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 19.115407954850763,
+      "mdh_actual_position_max_m": 5.551115123125783e-16,
+      "reference_decomposition_max_difference_m": 3.71684833518765e-16
+    },
+    {
+      "run": "larger_base",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 23.8314829983169,
+      "mdh_actual_position_max_m": 4.440892098500626e-16,
+      "reference_decomposition_max_difference_m": 4.3912898491094143e-16
+    },
+    {
+      "run": "larger_segment_dls",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 23.939582376497125,
+      "mdh_actual_position_max_m": 5.551115123125783e-16,
+      "reference_decomposition_max_difference_m": 4.3749590538863514e-16
+    },
+    {
+      "run": "coarse_base",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 96.60370292837914,
+      "mdh_actual_position_max_m": 5.551115123125783e-16,
+      "reference_decomposition_max_difference_m": 4.721480364956984e-16
+    },
+    {
+      "run": "coarse_segment_dls",
+      "rows": 5500,
+      "draw_rows": 4999,
+      "tracking_rmse_um": 84.83813034586196,
+      "mdh_actual_position_max_m": 5.551115123125783e-16,
+      "reference_decomposition_max_difference_m": 4.708406279067216e-16
+    }
+  ],
+  "replay_stride": 10,
+  "source_hashes_checked": true,
+  "verifier_sha256": "5f284ac58549c96eb88a7c957b0e8b3ad774c07c4c121a0668cf20519619082c",
+  "mdh_sha256": "307ec7c438b543050487e7b433ef624ffbfb692dac9dda6686c2ce7c1bf1189f",
+  "scope": "Saved-data recomputation and independent kinematic replay; not a second dynamics run"
+}

@@ -1,0 +1,98 @@
+{
+  "standard_heart_replayed": [
+    "baseline",
+    "velocity_ff",
+    "dynamics_ff"
+  ],
+  "prior_project_baseline_reproduced": true,
+  "dynamics": {
+    "mass_matrix_max_abs": 4.440892098500626e-15,
+    "inverse_dynamics_without_gravity_max_abs_Nm": 1.7763568394002505e-14
+  },
+  "contour_metrics": [
+    {
+      "case": "standard",
+      "method": "baseline",
+      "contour_rmse_mm": 0.5065226434945009,
+      "contour_max_mm": 1.1720070176347315,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "standard",
+      "method": "velocity_ff",
+      "contour_rmse_mm": 1.2450247995676278,
+      "contour_max_mm": 3.3782864856633545,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "standard",
+      "method": "dynamics_ff",
+      "contour_rmse_mm": 0.0202309363050485,
+      "contour_max_mm": 0.05217157926372589,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "faster",
+      "method": "baseline",
+      "contour_rmse_mm": 1.0757249031606915,
+      "contour_max_mm": 2.2848909541246605,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "faster",
+      "method": "velocity_ff",
+      "contour_rmse_mm": 3.060510766126264,
+      "contour_max_mm": 8.011442199408878,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "faster",
+      "method": "dynamics_ff",
+      "contour_rmse_mm": 0.052937759530742354,
+      "contour_max_mm": 0.14772970385729084,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "slower",
+      "method": "baseline",
+      "contour_rmse_mm": 0.33788134937461545,
+      "contour_max_mm": 0.7900288681191628,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "slower",
+      "method": "velocity_ff",
+      "contour_rmse_mm": 0.6490637104271257,
+      "contour_max_mm": 1.75713527836573,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "slower",
+      "method": "dynamics_ff",
+      "contour_rmse_mm": 0.008635736339014701,
+      "contour_max_mm": 0.022051574837903577,
+      "dense_curve_max_gap_mm": 0.015369086485081751
+    },
+    {
+      "case": "larger",
+      "method": "baseline",
+      "contour_rmse_mm": 0.6498859149281792,
+      "contour_max_mm": 1.5298450944047175,
+      "dense_curve_max_gap_mm": 0.019211358106438762
+    },
+    {
+      "case": "larger",
+      "method": "velocity_ff",
+      "contour_rmse_mm": 1.5570231469677314,
+      "contour_max_mm": 4.232392911277094,
+      "dense_curve_max_gap_mm": 0.019211358106438762
+    },
+    {
+      "case": "larger",
+      "method": "dynamics_ff",
+      "contour_rmse_mm": 0.025323558007397558,
+      "contour_max_mm": 0.06536918887554298,
+      "dense_curve_max_gap_mm": 0.019211358106438762
+    }
+  ]
+}

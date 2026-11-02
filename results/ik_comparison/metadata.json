@@ -1,0 +1,137 @@
+{
+  "seed": 42,
+  "samples": 12,
+  "repeats": 3,
+  "options": {
+    "max_iterations": 250,
+    "position_tolerance": 0.0001,
+    "rotation_tolerance": 0.001,
+    "rotation_weight": 0.2,
+    "max_joint_step": 0.2,
+    "damping": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "backtracking_steps": 10
+  },
+  "variants": {
+    "A_fixed": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "B_cap": [
+      false,
+      true,
+      false,
+      false
+    ],
+    "C_candidates": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "D_search": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "E_full": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "minus_candidates": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "minus_cap": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "minus_search": [
+      true,
+      true,
+      false,
+      true
+    ]
+  },
+  "versions": {
+    "python": "3.12.16",
+    "pinocchio": "4.1.0",
+    "mujoco": "3.16.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  },
+  "checks": {
+    "model": {
+      "fk_position_max_abs_m": 2.7755575615628914e-16,
+      "rotation_max_abs": 8.881784197001252e-16,
+      "mj_jacobian_max_abs": 2.7755575615628914e-16,
+      "finite_difference_max_abs": 1.2678297300894315e-10
+    },
+    "derivatives": {
+      "position": 1.4863449360191794e-10,
+      "pose": 1.163382168378746e-10
+    },
+    "full_solver_max_angle_difference": 0.0,
+    "repeat_max_angle_difference": 0.0
+  },
+  "frame": "link7 BODY origin in MJCF world",
+  "collision_checked": false,
+  "hashes": {
+    "experiments\\experiments_06_ik_analysis.py": "ff51bc9022bd9825103a7869d67d8ed9801c4c7e58940a7cc9b7b978b3f46fe9",
+    "experiments\\rizon4_analysis_common.py": "8ec31ae7f42f41ead0bb80936dcb882b9c902f6e153d2512db1bbd3e0e55483a",
+    "experiments\\rizon4_ik.py": "3259195ac15644107607cfc0e022de61020addb99c55357ff31b3d25b71e9374",
+    "experiments\\run_06_reference.py": "20acf6a9b79b5dec8da1ccb3693a4775181dce01b66a796153f702f3a0a2bca4",
+    "flexiv_rizon4\\CHANGELOG.md": "096f7f6335d32be240ba8064eba250fcc8a0098d6974d66efbae1d8847209ee6",
+    "flexiv_rizon4\\compute_gains.py": "ec21ee489d387e9959b272a38912074ff901a140643e935a424d2bfa61feda53",
+    "flexiv_rizon4\\flexiv_rizon4.png": "c0e53fab13a20c344015d1aa67a69ee0d0e969ee9717f20dbf081fb3624889f5",
+    "flexiv_rizon4\\flexiv_rizon4.xml": "21803d44b995af7e701fad5be840f7e3b68b2085bd2d0c77446bc5e61f711b6c",
+    "flexiv_rizon4\\LICENSE": "fc6c2136573c11eabd0407c1f96c6df3eea38227429054c3cb4d26cb028c0406",
+    "flexiv_rizon4\\README.md": "1018ba9b2dd4b368cac78c187c0ad8b22ee62a9da3c1a2cb5c0fd911219ba8e0",
+    "flexiv_rizon4\\scene.xml": "f1e12cb7be181dc08ec65ffc59199c06d8fe908891e59acded1388b2d4d53a23",
+    "flexiv_rizon4\\assets\\link0\\link0.obj": "5b04b8439bc0d91e51b82110cb854e527b480f0a6583b1444f33da6ec428cfa3",
+    "flexiv_rizon4\\assets\\link0\\link0.xml": "af334b439b197d88902147ccf08587cb7bd24f9198062a80c6ab324e7aa6839c",
+    "flexiv_rizon4\\assets\\link0\\material.mtl": "cf99258d3eb5551c1afaf3d3f3b3b50a66d5b4ba012320919dcd50f113d50de6",
+    "flexiv_rizon4\\assets\\link1\\link1.xml": "3efc5efec5cd6646f1410320c491cc55c80113057b47cf8b869da13143a8d1df",
+    "flexiv_rizon4\\assets\\link1\\link1_0.obj": "a0c19f6e7a16e75d2d7a19df52841577876739284b6f3dffad043132e9f1bb28",
+    "flexiv_rizon4\\assets\\link1\\link1_1.obj": "233d74f5729433edc5efbece1ed5295427acba6efb353aa810065b6d48934e5f",
+    "flexiv_rizon4\\assets\\link1\\material.mtl": "cf99258d3eb5551c1afaf3d3f3b3b50a66d5b4ba012320919dcd50f113d50de6",
+    "flexiv_rizon4\\assets\\link2\\link2.xml": "4d055d9f85c7f7feeb70e245f432453298a132a76e4b95b7542c7498fd6aa154",
+    "flexiv_rizon4\\assets\\link2\\link2_0.obj": "661d5fc9174493bf448237195a5d9766002cb0cd812e12f53058f688a4b3ac38",
+    "flexiv_rizon4\\assets\\link2\\link2_1.obj": "474846d33c7e3a3e9cf15af51a13fcbbb3142efbb1a4e51d0ae40c9cd04b577f",
+    "flexiv_rizon4\\assets\\link2\\material.mtl": "5db650dbafadaa98321554faa6e2bc0644cdd066461c9e9706b9778796face59",
+    "flexiv_rizon4\\assets\\link3\\link3.xml": "1cf6feadf6f1f98f13254f0983631db41b8d05d0785f54fa4613e5245c0ad97c",
+    "flexiv_rizon4\\assets\\link3\\link3_0.obj": "f2bbb9bddad4793d6dbe17db121516c4a4c08ffd48bd17e8219735587d374f87",
+    "flexiv_rizon4\\assets\\link3\\link3_1.obj": "a2c332f775fee1a0b15e042231f0a2b158f6f5a59ccabac492291bcd9e483f51",
+    "flexiv_rizon4\\assets\\link3\\material.mtl": "5db650dbafadaa98321554faa6e2bc0644cdd066461c9e9706b9778796face59",
+    "flexiv_rizon4\\assets\\link4\\link4.xml": "fae4bd450725453035726d9c838e6065984a5434e558e15aceae3bf0c14322f7",
+    "flexiv_rizon4\\assets\\link4\\link4_0.obj": "865222e62b41eee138e3b1e57f95e298992272dbcb993d0a81440ef4609e4680",
+    "flexiv_rizon4\\assets\\link4\\link4_1.obj": "b8623bec0e0e7df897c9a76de89ae4f9b30aaf2ee4a417847f1d5ba6118c8d58",
+    "flexiv_rizon4\\assets\\link4\\material.mtl": "cf99258d3eb5551c1afaf3d3f3b3b50a66d5b4ba012320919dcd50f113d50de6",
+    "flexiv_rizon4\\assets\\link5\\link5.xml": "0e755d664dc00f0a53b4850de3f28667f539da2aa5daa08b08b1b71e9f7bb628",
+    "flexiv_rizon4\\assets\\link5\\link5_0.obj": "d92caec0877db5f8eb34185446aa07ea007ade120a1b23dffd0dc8a31a2b7641",
+    "flexiv_rizon4\\assets\\link5\\link5_1.obj": "70b4c7356ebf1105aecc68716310c048f07f55311b8cacb6154824640518127b",
+    "flexiv_rizon4\\assets\\link5\\material.mtl": "5db650dbafadaa98321554faa6e2bc0644cdd066461c9e9706b9778796face59",
+    "flexiv_rizon4\\assets\\link6\\link6.xml": "e521f3aa50df1b90277a7c5281ca61d48e7c382d2247559553ede770653b84b8",
+    "flexiv_rizon4\\assets\\link6\\link6_0.obj": "b24ed793da3feb23eb13c17da59740f6658907ad5c75065ee12788b5f9dbaa76",
+    "flexiv_rizon4\\assets\\link6\\link6_1.obj": "b30adeeb69f09463ba0930f2e4c73d91e54b8eb66e216f604643e95af07bdbae",
+    "flexiv_rizon4\\assets\\link6\\material.mtl": "5db650dbafadaa98321554faa6e2bc0644cdd066461c9e9706b9778796face59",
+    "flexiv_rizon4\\assets\\link7\\link7.obj": "16514862d82cbe06f844b9fd7c5b681ff6231d650dd337a6f024ab38a3e097db",
+    "flexiv_rizon4\\assets\\link7\\link7.xml": "3ea5ba34ac51779d527762e81a99bedd1359ce873d7cc8babe4c72e665650967",
+    "flexiv_rizon4\\assets\\link7\\material.mtl": "cf99258d3eb5551c1afaf3d3f3b3b50a66d5b4ba012320919dcd50f113d50de6"
+  },
+  "timing": "perf_counter, includes common trace/SVD instrumentation, excludes plotting and IO; median of repeats; randomized order",
+  "source": "https://github.com/stack-of-tasks/pinocchio/blob/devel/examples/inverse-kinematics.py"
+}
